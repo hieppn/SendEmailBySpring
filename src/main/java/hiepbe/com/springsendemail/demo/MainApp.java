@@ -1,4 +1,4 @@
-package stackjava.com.springsendemail.demo;
+package hiepbe.com.springsendemail.demo;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.mail.MailSender;
@@ -6,7 +6,7 @@ import org.springframework.mail.SimpleMailMessage;
 
 public class MainApp {
 	public static void main(final String[] args) {
-		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 		MailSender mailSender = (MailSender) context.getBean("mailSender2");
 		System.out.println("Sending an email to your email....");
 		SimpleMailMessage message = new SimpleMailMessage();
